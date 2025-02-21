@@ -11,6 +11,36 @@
 */
 
 .page {
+  font-family: var(--font-family),'Arial', sans-serif;
+  background-image:var(--background-gradient);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: "wght" var(--font-weight),400;
+  
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 100px auto;
+  border: 2px solid #000;
+  padding: clamp(6.67rem, 6.5186rem + 0.7268vw, 7.1rem) clamp(0rem, -2.3486rem + 11.2732vw, 6.67rem);
+  font-family: var(--font-family-accent);
+  background-color: #fff;
+ max-inline-size: 700px;
+}
+
+.header_logo {
+margin-block-start: 13px;
+  font-size: 49px;
+}
+.header_title {
+margin-block-end: 13px;
+font-size: 14px;
+  text-transform: uppercase;
+
 }
