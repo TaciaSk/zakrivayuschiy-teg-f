@@ -30,7 +30,7 @@
   border: 2px solid #000;
   padding: clamp(6.67rem, 6.5186rem + 0.7268vw, 7.1rem) clamp(0rem, -2.3486rem + 11.2732vw, 6.67rem);
   font-family: var(--font-family-accent);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
  max-inline-size: 700px;
 }
 
@@ -42,5 +42,69 @@ margin-block-start: 13px;
 margin-block-end: 13px;
 font-size: 14px;
   text-transform: uppercase;
+}
+/*main*/
+
+.main {
+  display: grid;
+  column-gap: 52px;
+  background-color: rgba(255, 255, 255, 1);
+ border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.post {
+  position: relative;
+}
+
+.post_title {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-title);
+  padding:6px 10px 4px ;
+}
+
+.post_image_container {
+  position: relative;
+}
+
+.post_watermark{
+  position: absolute;
+  left: 262.5px;
+  top:25px;
+  font-family: var(--font-family-accent);
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: 
+  -1px -1px 0 var(--stroke-color),
+  1px -1px 0 var(--stroke-color),
+ -1px 1px 0 var(--stroke-color),
+  1px 1px 0 var(--stroke-color);
+  mix-blend-mode: soft-light;
+}
+
+@supports (
+  (
+      (text-stroke: 1px var(--stroke-color)) or
+        (-webkit-text-stroke: 1px var(--stroke-color))
+    )
+    and (mix-blend-mode: soft-light)
+) {
+  .post_watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
+    mix-blend-mode: soft-light;
+  }
+}
+
+.post_content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin: 20px 29px 20px 25px;
+  font-size: var(--font-size);
+line-height: 21px;
 
 }
+
+
