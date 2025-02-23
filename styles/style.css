@@ -128,32 +128,46 @@ line-height: 117%;
   border:none;
   background-color: initial;
 }
-
-.card__like-button {
+.button {
   border:none;
   background-color: initial;
-  padding: 10px 35px;
   font-family: var(--font-family-accent);
   font-size: 14px;
   outline: 2px solid rgba(0,0,0,1);
 }
+.card__like-button {
+  padding: 10px 35px;
+}
 
 .footer {
-  margin-block-start: 54px;
-  background-color: aqua;
+  margin-block-start: 50px;
+  padding-block-end: 70px;
+  background-color: var(--stroke-color);
+
 }
-.button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
- border-color: blueviolet;
- border: 2px solid rgba(0, 0, 0, 1);
- margin-inline-start: 100px;0
+
+.button_save {
+position: relative;
 }
+
+
+.button_svg-text {
+ display: grid;
+ grid-template-rows:35px 15px;
+place-self:center ;
+margin-inline-start:35px ;
+margin-inline-end: 35px;
+}
+
 .floppy {
+  padding-inline-start: 132px;
+  padding-block-start: 15px;
   
 }
+.button_text {
+  padding-block-end: 15px;
+}
+
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
