@@ -50,13 +50,14 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  gap: 50px;
-  margin-inline: 370px;
+  gap: 52px;
 }
 
 .post {
   border: 2px solid rgba(0, 0, 0, 1);
   background-color: var(--stroke-color);
+ margin-inline: clamp(0rem, -27.1612rem + 130.3738vw, 23.25rem);
+  
 }
 
 .post_title {
@@ -112,8 +113,8 @@
 .post_content {
   display: flex;
   flex-direction: column;
-  gap: 27px;
-  margin: 26px 26.5px 19px 24px;
+  gap: 25.8px;
+  margin: 31px 24.5px 19px 22px;
   font-size: var(--font-size);
   line-height: 118%;
 }
@@ -162,4 +163,30 @@
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
+}
+
+@media (width <= 375px) {
+
+.post {
+margin: 0 auto;
+}
+.post_content {
+  gap: 26px;
+  padding: 25px 26px 20px 25px;
+  margin: 0;
+  line-height: 117%;
+  
+}
+.header_logo {
+  margin-block-start: 14px;
+}
+.button_svg-text {
+  flex-direction: column;
+  min-height: 84px;
+  
+}
+.floppy {
+  width: 28px;
+  height: 28px;
+}
 }
