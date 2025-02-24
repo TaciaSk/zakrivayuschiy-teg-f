@@ -11,84 +11,87 @@
 */
 
 .page {
-  font-family: var(--font-family),'Arial', sans-serif;
-  background-image:var(--background-gradient);
+  font-family: var(--font-family), "Arial", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-image: var(--background-gradient);
   min-inline-size: 375px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--font-weight),400;
+  font-variation-settings: "wght" var(--font-weight), 400;
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin: 100px auto 102px;
+  margin: 100px auto 101px;
   border: 2px solid #000;
-  padding: clamp(6.67rem, 6.5186rem + 0.7268vw, 7.1rem) clamp(0rem, -2.3486rem + 11.2732vw, 6.67rem);
+  padding: clamp(6.67rem, 6.5186rem + 0.7268vw, 7.1rem)
+    clamp(0rem, -2.3486rem + 11.2732vw, 6.67rem);
   font-family: var(--font-family-accent);
   background-color: rgba(255, 255, 255, 1);
- max-inline-size: 700px;
+  max-inline-size: 698px;
 }
 
 .header_logo {
-margin-block-start: 13px;
-  font-size: 49px;
+  margin-block-start: 17px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
+
 .header_title {
-margin-block-end: 13px;
-font-size: 14px;
+  margin-block-end: 13px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
 /*main*/
 
 .main {
-  background-color: rgba(255, 255, 255, 1); 
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 50px;
+  margin-inline: 370px;
 }
 
 .post {
-  position: relative;
-  border: 2px solid  rgba(0, 0, 0, 1);
-  margin-block-end: 50px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-color: var(--stroke-color);
 }
 
 .post_title {
-  font-size: var(--font-size);
+  padding: 4px 9px;
   font-weight: var(--font-weight-title);
-  padding:3px 11px;
+  font-size: var(--font-size);
 }
 
 .post_image_container {
   position: relative;
-block-size: 377px;
   border-top: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  margin-block-end: 25px;
 }
 
-.post_imege {
+.post_image {
   display: block;
-  object-fit: cover;
+  object-fit:cover;
   object-position: center;
-  inline-size:100%;
+  inline-size: 100%;
   block-size: 100%;
+
 }
 
-.post_watermark{
+.post_watermark {
   position: absolute;
-  right: 10px;
-  top:25px;
+  top: 27px;
+  right: 25px;
+  color: rgba(0, 0, 0, 1);
   font-family: var(--font-family-accent);
   font-size: 14px;
   line-height: 14px;
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 
-  -1px -1px 0 var(--stroke-color),
-  1px -1px 0 var(--stroke-color),
- -1px 1px 0 var(--stroke-color),
-  1px 1px 0 var(--stroke-color);
-  mix-blend-mode: soft-light;
+  text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color);
+  mix-blend-mode: hard-light;
+  opacity: 10;
 }
 
 @supports (
@@ -110,68 +113,53 @@ block-size: 377px;
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin: 20px 26px 20px 26px;
+  margin: 26px 26.5px 19px 24px;
   font-size: var(--font-size);
-line-height: 117%;
-
-
+  line-height: 118%;
 }
 .post_buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 9px;
+  gap: 8px;
   margin-block-end: 8px;
-  
-  
 }
 .card__icon-button {
-  border:none;
+  border: none;
   background-color: initial;
 }
 .button {
-  border:none;
-  background-color: initial;
+  border: none;
+  outline: 2px solid rgba(0, 0, 0, 1);
   font-family: var(--font-family-accent);
   font-size: 14px;
-  outline: 2px solid rgba(0,0,0,1);
+  background-color: initial;
 }
 .card__like-button {
   padding: 10px 35px;
+  margin-inline-end: 2px;
 }
 
 .footer {
-  margin-block-start: 50px;
   padding-block-end: 70px;
-  background-color: var(--stroke-color);
-
 }
 
 .button_save {
-position: relative;
+  min-height: 51px;
 }
-
 
 .button_svg-text {
- display: grid;
- grid-template-rows:35px 15px;
-place-self:center ;
-margin-inline-start:35px ;
-margin-inline-end: 35px;
-}
-
-.floppy {
-  padding-inline-start: 132px;
-  padding-block-start: 15px;
-  
-}
-.button_text {
-  padding-block-end: 15px;
+  display: flex;
+  flex-direction: row;
+  place-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--stroke-color);
+  gap: 6px;
+  min-height: 51px;
+  padding-inline: 21px;
 }
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
-} 
-
-
-
+}
