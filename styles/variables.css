@@ -11,4 +11,6 @@ linear-gradient(#e7e7e7 0%, #e7e7e7 0.1%, #1a1a1a 100%);
 --stroke-color:rgba(255, 255, 255, 1);
 --background-color:rgba(255, 255, 255, 1);
 
+--sparks-color:rgba(255, 0, 0, 1);
+--icon-color:rgba(0, 0, 0, 1);
 }
