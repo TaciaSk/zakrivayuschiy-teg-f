@@ -19,5 +19,5 @@
   --text-color: rgba(0, 0, 0, 1);
   --sparks-color: rgba(255, 0, 0, 1);
   --icon-color: rgba(0, 0, 0, 1);
-  --background-color-difference: rgba(0, 0, 0, 1);
+  --color-difference:rgba(255, 255, 255, 1);;
 }

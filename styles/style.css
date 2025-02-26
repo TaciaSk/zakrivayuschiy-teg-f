@@ -219,10 +219,10 @@ dialog::backdrop {
   border: none;
   outline: 2px solid var(--border-color);
   overflow: hidden;
-  color: var(--text-color);
+  color: var(--color-difference);
   font-family: var(--font-family-accent),'Pixel Emulator font', sans-serif;
   font-size: 14px;
-  background-color: var(--border-color);
+  background-color: var(--background-color);
   cursor: pointer;
 }
 
