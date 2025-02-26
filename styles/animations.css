@@ -10,61 +10,56 @@
 
 */
 
-@keyframes scale{
+@keyframes scale {
   from {
-    scale:1;
+    scale: 1;
   }
-to {
-  scale:1.25;
-}
+  to {
+    scale: 1.25;
+  }
 }
 @keyframes opacity {
-
   from {
-    opacity:0;
+    opacity: 0;
   }
-to {
-  opacity:1;
+  to {
+    opacity: 1;
+  }
 }
-
-}
-
 
 .like-icon:hover .main-body {
   fill: var(--icon-color);
-  transition: fill 0.3s 0.05s ;
+  transition: fill 0.3s 0.05s linear;
 }
-
 
 .card__icon-button:hover .core {
   fill: var(--icon-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
   fill: var(--sparks-color);
-  transition: fill  0.3s 0.05s ;
+  transition: fill 0.3s 0.05s linear;
 }
-
 
 .like-icon:active .core {
   fill: var(--sparks-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
-.like-icon.is-liked .main-body  {
+.like-icon.is-liked .main-body {
   fill: var(--sparks-color);
-  transition: fill 0.3s 0.05s ;
+  transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon.is-liked .core  {
+.like-icon.is-liked .core {
   fill: var(--sparks-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--sparks-color);
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
 }
 .like-icon.is-liked .heart {
   animation: scale 0.3s 0.1s ease-in alternate;
@@ -76,4 +71,3 @@ to {
 .like-icon.is-liked::after {
   transition: 0.1s;
 }
-
