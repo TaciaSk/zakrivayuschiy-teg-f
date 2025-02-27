@@ -12,8 +12,8 @@
 
 .page {
   font-family: var(--font-family), "Arial", sans-serif;
-  background-image: var(--background-gradient);
   background-color: var(--background-color);
+  background-image: var(--background-gradient);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -31,7 +31,7 @@
   padding: clamp(6.67rem, 6.5186rem + 0.7268vw, 7.1rem)
     clamp(0rem, -2.3486rem + 11.2732vw, 6.67rem);
   font-family: var(--font-family-accent);
-background-color: var(--background-color);
+  background-color: var(--background-color);
   max-inline-size: 698px;
 }
 
@@ -116,7 +116,7 @@ background-color: var(--background-color);
   right: 25px;
   opacity: 0.5;
   color: rgba(0, 0, 0, 1);
-  font-family: var(--font-family-accent),'Pixel Emulator font', sans-serif;
+  font-family: var(--font-family-accent), "Pixel Emulator font", sans-serif;
   font-size: var(--watermark-size);
   line-height: 14px;
   text-shadow: -1px -1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color),
@@ -142,7 +142,7 @@ background-color: var(--background-color);
 .post_content {
   display: flex;
   flex-direction: column;
-  gap: 25.8px;
+  gap: 25px;
   margin: 31px 24.5px 19px 22px;
   font-size: var(--font-size);
   line-height: 117%;
@@ -177,7 +177,7 @@ background-color: var(--background-color);
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: var(--font-family-accent),'Pixel Emulator font', sans-serif;
+  font-family: var(--font-family-accent), "Pixel Emulator font", sans-serif;
   font-size: var(--watermark-size);
   line-height: 21px;
   text-transform: uppercase;
@@ -193,7 +193,7 @@ background-color: var(--background-color);
   padding: 9px 17px;
   outline: 2px solid var(--border-color);
   color: var(--text-color);
-  font-family: var(--font-family-accent),'Pixel Emulator font', sans-serif;
+  font-family: var(--font-family-accent), "Pixel Emulator font", sans-serif;
   font-size: 14px;
   background-color: var(--background-color);
 }
@@ -209,6 +209,8 @@ dialog::backdrop {
   display: flex;
   justify-content: flex-end;
   gap: 3px;
+  margin-bottom: 7px;
+  block-size: 37px;
 }
 
 .button {
@@ -220,8 +222,8 @@ dialog::backdrop {
   outline: 2px solid var(--border-color);
   overflow: hidden;
   color: var(--color-difference);
-  font-family: var(--font-family-accent),'Pixel Emulator font', sans-serif;
-  font-size: 14px;
+  font-family: var(--font-family-accent), "Pixel Emulator font", sans-serif;
+  font-size: var(--watermark-size);
   background-color: var(--background-color);
   cursor: pointer;
 }
@@ -242,6 +244,7 @@ dialog::backdrop {
 .card__icon-button:focus {
   text-decoration: none;
 }
+
 .contour {
   color: var(--icon-color);
 }
@@ -261,7 +264,6 @@ dialog::backdrop {
 
 .card__like-button {
   margin-inline-end: 2px;
-  margin-block-end: 7px;
   padding-inline: 35px;
   max-inline-size: 126px;
 }
@@ -320,19 +322,23 @@ dialog::backdrop {
   .post {
     margin: 0 auto;
   }
+
   .post_content {
-    gap: 26px;
+    gap: 25.5px;
     margin: 0;
     padding: 25px 26px 20px 25px;
     line-height: 117%;
   }
+
   .header_logo {
     margin-block-start: 14px;
   }
+
   .button_svg-text {
     flex-direction: column;
-    min-height: 84px;
+    min-height: 78px;
   }
+
   .floppy-svg {
     width: 28px;
     height: 28px;
