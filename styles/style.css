@@ -85,7 +85,7 @@
   aspect-ratio: 1/1;
 }
 
-/*filters*/
+/*Filters*/
 
 .image_fiter-contrast {
   filter: contrast(200%);
