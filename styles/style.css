@@ -20,6 +20,7 @@
   min-inline-size: 375px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--font-weight), 400;
+  
 }
 .header {
   display: flex;
@@ -33,6 +34,7 @@
   font-family: var(--font-family-accent);
   background-color: var(--background-color);
   max-inline-size: 698px;
+  color: var(--text-color);
 }
 
 .header_logo {
@@ -58,6 +60,8 @@
   margin-inline: clamp(0rem, -27.1612rem + 130.3738vw, 23.25rem);
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
+  color: var(--text-color);
+  min-width: 375px;
 }
 
 .post_title {
@@ -318,13 +322,14 @@ dialog::backdrop {
   width: 100%;
 }
 
+
 @media (width <= 375.2px) {
   .post {
     margin: 0 auto;
   }
 
   .post_content {
-    gap: 25.5px;
+    gap: 25.3px;
     margin: 0;
     padding: 25px 26px 20px 25px;
     line-height: 117%;
