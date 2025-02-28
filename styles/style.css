@@ -19,7 +19,7 @@
   background-attachment: fixed;
   min-inline-size: 375px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--font-weight), 400;
+  font-variation-settings: "wght" var(--font-weight);
   
 }
 .header {
@@ -66,8 +66,7 @@
 
 .post_title {
   padding: 4px 9px;
-  font-size: var(--font-size);
-  font-variation-settings: "wght" var(--font-weight-title), 700;
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 
 .post_image_container {
@@ -151,7 +150,7 @@
   margin: 31px 24.5px 19px 22px;
   font-size: var(--font-size);
   line-height: 117%;
-  font-variation-settings: "wght" var(--font-weight), 400;
+  font-variation-settings: "wght" var(--font-weight);
 }
 
 .main_button {
@@ -241,7 +240,6 @@ dialog::backdrop {
   background-color: inherit;
   cursor: pointer;
   transition: 0.3s ease;
-  transform-origin: center;
   padding-inline: 0;
 }
 
